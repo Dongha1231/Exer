@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editExerciseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="운동 이름"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="운동 시간 (분)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editCaloriesBurned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="소모 칼로리 (Kcal)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/addExerciseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="운동 추가"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/exerciseListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp" />
+</LinearLayout>
